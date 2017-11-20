@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GoF_Patterns.Facade;
 
 namespace GoF_Patterns
 {
@@ -10,11 +11,8 @@ namespace GoF_Patterns
     {
         static void Main(string[] args)
         {
-            Developer dev = new PanelDeveloper("ООО КирпичСтрой");
-            House panelHouse = dev.Create();
-
-            dev = new WoodDeveloper("Частный застройщик");
-            House woodHouse = dev.Create();
+            IClient client = new ProgrammerClient();
+            client.UsePattern();
 
             Console.ReadLine();
         }
