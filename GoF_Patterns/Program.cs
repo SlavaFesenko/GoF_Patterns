@@ -11,8 +11,7 @@ namespace GoF_Patterns
     {
         static void Main(string[] args)
         {
-            IClient client = new ProgrammerClient();
-            client.UsePattern();
+            FacadePresenter.PresentPattern();
 
             Console.ReadLine();
         }

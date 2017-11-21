@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace GoF_Patterns.Facade
 {
-    class ProgrammerClient : IClient
+    class ProgrammerClient
     {
         private readonly IFacade _facade;
         public ProgrammerClient(IFacade facade)
         {
             _facade = facade;
         }
+
         public void UsePattern()
         {
             _facade.ActionFirst();
