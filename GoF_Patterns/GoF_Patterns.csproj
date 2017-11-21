@@ -58,12 +58,15 @@
     <Compile Include="Facade\VsIdeFacade.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\Car.cs" />
+    <Compile Include="Strategy\Interfaces\IMovable.cs" />
+    <Compile Include="Strategy\Realizations\ElectricMove.cs" />
+    <Compile Include="Strategy\Realizations\PatrolMove.cs" />
+    <Compile Include="Strategy\StrategyPresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Strategy\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

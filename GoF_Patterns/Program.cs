@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GoF_Patterns.Facade;
+using GoF_Patterns.Strategy;
 
 namespace GoF_Patterns
 {
@@ -11,7 +12,8 @@ namespace GoF_Patterns
     {
         static void Main(string[] args)
         {
-            FacadePresenter.PresentPattern();
+            //FacadePresenter.PresentPattern();
+            StrategyPresenter.PresentPattern();
 
             Console.ReadLine();
         }
