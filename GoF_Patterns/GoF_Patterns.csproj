@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\ExampleProblem\SuperElven.cs" />
+    <Compile Include="AbstractFactory\ExampleProblem\SuperHero.cs" />
     <Compile Include="AbstractFactory\Example\AHeroFactory.cs" />
     <Compile Include="AbstractFactory\Example\AMovement.cs" />
     <Compile Include="AbstractFactory\Example\Arbalet.cs" />
@@ -90,7 +92,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AbstractFactory\ExampleProblem\" />
     <Folder Include="AbstractFactory\OwnExample\" />
     <Folder Include="AbstractFactory\OwnProblem\" />
     <Folder Include="Decorator\ExampleProblem\" />
