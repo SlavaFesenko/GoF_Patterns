@@ -1,10 +1,14 @@
 ﻿using System;
-using GoF_Patterns.Facade.Example;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using GoF_Patterns.Decorator.Example;
 using GoF_Patterns.Utils;
 
-namespace GoF_Patterns.Facade
+namespace GoF_Patterns.Decorator
 {
-    public static class FacadePresenter
+    static class DecoratorPresenter
     {
         public static void Present(PresentType presentType)
         {
@@ -20,9 +24,18 @@ namespace GoF_Patterns.Facade
 
         private static void PresentExample()
         {
-            var facade = new VsIdeFacade(new Clr(), new Compiler(), new TextEditor());
-            var client = new ProgrammerClient(facade);
-            client.UsePattern();
+            APizza pizza1 = new ItalianPizza();
+            pizza1 = new TomatoPizza(pizza1);
+            Console.WriteLine($"Name: {pizza1.Name}, cost: {pizza1.GetCost()}");
+
+            APizza pizza2 = new ItalianPizza();
+            pizza2 = new CheesePizza(pizza2);
+            Console.WriteLine($"Name: {pizza2.Name}, cost: {pizza2.GetCost()}");
+
+            APizza pizza3 = new BulgerianPizza();
+            pizza3 = new CheesePizza(pizza3); // Bulgarian pizza with cheese
+            pizza3 = new TomatoPizza(pizza3); // Bulgarian pizza with cheese with tomato
+            Console.WriteLine($"Name: {pizza3.Name}, cost: {pizza3.GetCost()}");
         }
 
         private static void PresentExampleProblem()

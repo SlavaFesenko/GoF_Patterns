@@ -46,27 +46,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Strategy\StrategyPresenter.cs" />
+    <Compile Include="Template\TemplatePresenter.cs" />
+    <Compile Include="Decorator\Example\APizza.cs" />
+    <Compile Include="Decorator\Example\APizzaDecorator.cs" />
+    <Compile Include="Decorator\Example\BulgerianPizza.cs" />
+    <Compile Include="Decorator\Example\CheesePizza.cs" />
+    <Compile Include="Decorator\DecoratorPresenter.cs" />
+    <Compile Include="Decorator\Example\ItalianPizza.cs" />
+    <Compile Include="Decorator\Example\TomatoPizza.cs" />
     <Compile Include="Facade\FacadePresenter.cs" />
-    <Compile Include="Facade\Clr.cs" />
-    <Compile Include="Facade\Compiler.cs" />
-    <Compile Include="Facade\Interfaces\ICompiler.cs" />
-    <Compile Include="Facade\Interfaces\IFacade.cs" />
-    <Compile Include="Facade\Interfaces\IClr.cs" />
-    <Compile Include="Facade\Interfaces\ITextEditor.cs" />
-    <Compile Include="Facade\ProgrammerClient.cs" />
-    <Compile Include="Facade\TextEditor.cs" />
-    <Compile Include="Facade\VsIdeFacade.cs" />
+    <Compile Include="Facade\Example\Clr.cs" />
+    <Compile Include="Facade\Example\Compiler.cs" />
+    <Compile Include="Facade\Example\Interfaces\ICompiler.cs" />
+    <Compile Include="Facade\Example\Interfaces\IFacade.cs" />
+    <Compile Include="Facade\Example\Interfaces\IClr.cs" />
+    <Compile Include="Facade\Example\Interfaces\ITextEditor.cs" />
+    <Compile Include="Facade\Example\ProgrammerClient.cs" />
+    <Compile Include="Facade\Example\TextEditor.cs" />
+    <Compile Include="Facade\Example\VsIdeFacade.cs" />
+    <Compile Include="Utils\CommonPresenter.cs" />
+    <Compile Include="Utils\PatternType.cs" />
+    <Compile Include="Utils\PresentType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Strategy\Car.cs" />
-    <Compile Include="Strategy\Interfaces\IMovable.cs" />
-    <Compile Include="Strategy\Realizations\ElectricMove.cs" />
-    <Compile Include="Strategy\Realizations\PatrolMove.cs" />
-    <Compile Include="Strategy\StrategyPresenter.cs" />
+    <Compile Include="Strategy\Example\Car.cs" />
+    <Compile Include="Strategy\Example\Interfaces\IMovable.cs" />
+    <Compile Include="Strategy\Example\Realizations\ElectricMove.cs" />
+    <Compile Include="Strategy\Example\Realizations\PatrolMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Decorator\ExampleProblem\" />
+    <Folder Include="Decorator\OwnExample\" />
+    <Folder Include="Decorator\OwnProblem\" />
+    <Folder Include="Facade\ExampleProblem\" />
+    <Folder Include="Facade\OwnExample\" />
+    <Folder Include="Facade\OwnProblem\" />
+    <Folder Include="Strategy\ExampleProblem\" />
+    <Folder Include="Strategy\OwnExample\" />
+    <Folder Include="Strategy\OwnProblem\" />
+    <Folder Include="Template\ExampleProblem\" />
+    <Folder Include="Template\Example\" />
+    <Folder Include="Template\OwnExample\" />
+    <Folder Include="Template\OwnProblem\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

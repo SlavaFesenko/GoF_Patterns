@@ -1,11 +1,7 @@
-﻿using GoF_Patterns.Facade.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using GoF_Patterns.Facade.Example.Interfaces;
 
-namespace GoF_Patterns.Facade
+namespace GoF_Patterns.Facade.Example
 {
     class Clr : IClr
     {

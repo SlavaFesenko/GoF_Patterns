@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GoF_Patterns.Strategy.Interfaces;
+﻿using GoF_Patterns.Strategy.Example.Interfaces;
 
-namespace GoF_Patterns.Strategy
+namespace GoF_Patterns.Strategy.Example
 {
     public class Car
     {

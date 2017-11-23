@@ -1,10 +1,14 @@
 ﻿using System;
-using GoF_Patterns.Facade.Example;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using GoF_Patterns.Decorator.Example;
 using GoF_Patterns.Utils;
 
-namespace GoF_Patterns.Facade
+namespace GoF_Patterns.Template
 {
-    public static class FacadePresenter
+    static class TemplatePresenter
     {
         public static void Present(PresentType presentType)
         {
@@ -20,9 +24,7 @@ namespace GoF_Patterns.Facade
 
         private static void PresentExample()
         {
-            var facade = new VsIdeFacade(new Clr(), new Compiler(), new TextEditor());
-            var client = new ProgrammerClient(facade);
-            client.UsePattern();
+            throw new NotImplementedException();
         }
 
         private static void PresentExampleProblem()
