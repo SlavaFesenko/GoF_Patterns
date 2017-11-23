@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GoF_Patterns.Decorator.Example;
+using GoF_Patterns.AbstractFactory.Example;
 using GoF_Patterns.Utils;
 
-namespace GoF_Patterns.Template
+namespace GoF_Patterns.AbstractFactory
 {
-    static class TemplatePresenter
+    static class AbstractFactoryPresenter
     {
         public static void Present(PresentType presentType)
         {
@@ -23,7 +19,13 @@ namespace GoF_Patterns.Template
 
         private static void PresentExample()
         {
-            throw new NotImplementedException();
+            Hero elven = new Hero(new ElvenFactory());
+            elven.Hit();
+            elven.Run();
+
+            Hero warrior = new Hero(new WarriorFactory());
+            warrior.Hit();
+            warrior.Run();
         }
 
         private static void PresentExampleProblem()

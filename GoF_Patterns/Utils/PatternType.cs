@@ -4,6 +4,7 @@
     {
         Decorator,
         Facade,
-        Strategy
+        Strategy,
+        AbstractFactory
     }
 }

@@ -46,7 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFactory\Example\AHeroFactory.cs" />
+    <Compile Include="AbstractFactory\Example\AMovement.cs" />
+    <Compile Include="AbstractFactory\Example\Arbalet.cs" />
+    <Compile Include="AbstractFactory\Example\AWeapon.cs" />
+    <Compile Include="AbstractFactory\Example\ElvenFactory.cs" />
+    <Compile Include="AbstractFactory\Example\FlyMovement.cs" />
+    <Compile Include="AbstractFactory\Example\Hero.cs" />
+    <Compile Include="AbstractFactory\Example\RunMovement.cs" />
+    <Compile Include="AbstractFactory\Example\Sword.cs" />
+    <Compile Include="AbstractFactory\Example\WarriorFactory.cs" />
     <Compile Include="Strategy\StrategyPresenter.cs" />
+    <Compile Include="AbstractFactory\AbstractFactoryPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -79,6 +90,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AbstractFactory\ExampleProblem\" />
+    <Folder Include="AbstractFactory\OwnExample\" />
+    <Folder Include="AbstractFactory\OwnProblem\" />
     <Folder Include="Decorator\ExampleProblem\" />
     <Folder Include="Decorator\OwnExample\" />
     <Folder Include="Decorator\OwnProblem\" />

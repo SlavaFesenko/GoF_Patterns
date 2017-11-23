@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
 using GoF_Patterns.Strategy;
+using GoF_Patterns.AbstractFactory;
 
 namespace GoF_Patterns.Utils
 {
@@ -18,6 +19,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.Decorator: DecoratorPresenter.Present(presentType); break;
                 case PatternType.Facade: FacadePresenter.Present(presentType); break;
                 case PatternType.Strategy: StrategyPresenter.Present(presentType); break;
+                case PatternType.AbstractFactory: AbstractFactoryPresenter.Present(presentType); break;
             }
         }
     }
