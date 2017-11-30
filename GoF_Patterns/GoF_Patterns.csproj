@@ -58,6 +58,16 @@
     <Compile Include="AbstractFactory\Example\RunMovement.cs" />
     <Compile Include="AbstractFactory\Example\Sword.cs" />
     <Compile Include="AbstractFactory\Example\WarriorFactory.cs" />
+    <Compile Include="Facade\ExampleProblem\Client.cs" />
+    <Compile Include="Facade\OwnExample\EmailService.cs" />
+    <Compile Include="Facade\OwnExample\ISendService.cs" />
+    <Compile Include="Facade\OwnExample\ISettingsLoader.cs" />
+    <Compile Include="Facade\OwnExample\NotificationServiceFactory.cs" />
+    <Compile Include="Facade\OwnExample\OeClient.cs" />
+    <Compile Include="Facade\OwnExample\PushService.cs" />
+    <Compile Include="Facade\OwnExample\SendServiceType.cs" />
+    <Compile Include="Facade\OwnExample\SettingsLoader.cs" />
+    <Compile Include="Facade\OwnExample\SmsService.cs" />
     <Compile Include="Strategy\StrategyPresenter.cs" />
     <Compile Include="AbstractFactory\AbstractFactoryPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
@@ -97,8 +107,6 @@
     <Folder Include="Decorator\ExampleProblem\" />
     <Folder Include="Decorator\OwnExample\" />
     <Folder Include="Decorator\OwnProblem\" />
-    <Folder Include="Facade\ExampleProblem\" />
-    <Folder Include="Facade\OwnExample\" />
     <Folder Include="Facade\OwnProblem\" />
     <Folder Include="Strategy\ExampleProblem\" />
     <Folder Include="Strategy\OwnExample\" />

@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using GoF_Patterns.Facade.Example;
+using GoF_Patterns.Facade.ExampleProblem;
+using GoF_Patterns.Facade.OwnExample;
 using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Facade
@@ -27,12 +30,16 @@ namespace GoF_Patterns.Facade
 
         private static void PresentExampleProblem()
         {
-            throw new NotImplementedException();
+            EpClient.UsePattern(new Clr(), new TextEditor(), new Compiler());
         }
 
         private static void PresentOwnExample()
         {
-            throw new NotImplementedException();
+            var factory = new NotificationServiceFactory(
+                new List<ISendService>() {new EmailService(), new PushService(), new SmsService()},
+                new SettingsLoader());
+            OeClient client = new OeClient(factory);
+            client.SendMessage();
         }
 
         private static void PresentOwnProblem()
