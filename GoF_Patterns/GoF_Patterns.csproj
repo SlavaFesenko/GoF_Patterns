@@ -58,6 +58,9 @@
     <Compile Include="AbstractFactory\Example\RunMovement.cs" />
     <Compile Include="AbstractFactory\Example\Sword.cs" />
     <Compile Include="AbstractFactory\Example\WarriorFactory.cs" />
+    <Compile Include="Decorator\ExampleProblem\Pizza.cs" />
+    <Compile Include="Decorator\Example\Training\Pizza.cs" />
+    <Compile Include="Decorator\OwnExample\ElementalWar.cs" />
     <Compile Include="Facade\ExampleProblem\Client.cs" />
     <Compile Include="Facade\OwnExample\EmailService.cs" />
     <Compile Include="Facade\OwnExample\ISendService.cs" />
@@ -111,8 +114,6 @@
   <ItemGroup>
     <Folder Include="AbstractFactory\OwnExample\" />
     <Folder Include="AbstractFactory\OwnProblem\" />
-    <Folder Include="Decorator\ExampleProblem\" />
-    <Folder Include="Decorator\OwnExample\" />
     <Folder Include="Decorator\OwnProblem\" />
     <Folder Include="Facade\OwnProblem\" />
     <Folder Include="Strategy\ExampleProblem\" />
