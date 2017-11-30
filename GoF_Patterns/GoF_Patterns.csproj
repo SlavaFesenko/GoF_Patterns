@@ -68,6 +68,13 @@
     <Compile Include="Facade\OwnExample\SendServiceType.cs" />
     <Compile Include="Facade\OwnExample\SettingsLoader.cs" />
     <Compile Include="Facade\OwnExample\SmsService.cs" />
+    <Compile Include="Strategy\OwnExample\BernoulliApproach.cs" />
+    <Compile Include="Strategy\OwnExample\ICalculationApproach.cs" />
+    <Compile Include="Strategy\OwnExample\InputData.cs" />
+    <Compile Include="Strategy\OwnExample\LaplasApproach.cs" />
+    <Compile Include="Strategy\OwnExample\ProbabilityCalculator.cs" />
+    <Compile Include="Strategy\OwnExample\OutputData.cs" />
+    <Compile Include="Strategy\OwnExample\PuassonApproach.cs" />
     <Compile Include="Strategy\StrategyPresenter.cs" />
     <Compile Include="AbstractFactory\AbstractFactoryPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
@@ -109,7 +116,6 @@
     <Folder Include="Decorator\OwnProblem\" />
     <Folder Include="Facade\OwnProblem\" />
     <Folder Include="Strategy\ExampleProblem\" />
-    <Folder Include="Strategy\OwnExample\" />
     <Folder Include="Strategy\OwnProblem\" />
     <Folder Include="Template\ExampleProblem\" />
     <Folder Include="Template\Example\" />
