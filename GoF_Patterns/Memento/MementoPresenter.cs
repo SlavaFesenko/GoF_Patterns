@@ -1,5 +1,6 @@
 ﻿using System;
 using GoF_Patterns.Memento.Example;
+using GoF_Patterns.Memento.OwnExample;
 using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Memento
@@ -37,7 +38,12 @@ namespace GoF_Patterns.Memento
 
         private static void PresentOwnExample()
         {
-            throw new NotImplementedException();
+            TownOriginator town = new TownOriginator(); // 10
+            town.Interact(5);  // 15
+            TownCheckPointsCaretaker careTaker = new TownCheckPointsCaretaker();
+            careTaker.TownCheckPoints.Push(town.SaveTown());
+            town.Interact(-10); // 5
+            town.RestoreTown(careTaker.TownCheckPoints.Pop()); // 15
         }
 
         private static void PresentOwnProblem()

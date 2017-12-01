@@ -81,6 +81,9 @@
     <Compile Include="Memento\Example\GameHistoryCaretaker.cs" />
     <Compile Include="Memento\Example\HeroMemento.cs" />
     <Compile Include="Memento\Example\HeroOriginator.cs" />
+    <Compile Include="Memento\OwnExample\TownOriginator.cs" />
+    <Compile Include="Memento\OwnExample\TownCheckPointsCaretaker.cs" />
+    <Compile Include="Memento\OwnExample\TownMemento.cs" />
     <Compile Include="Strategy\OwnExample\BernoulliApproach.cs" />
     <Compile Include="Strategy\OwnExample\ICalculationApproach.cs" />
     <Compile Include="Strategy\OwnExample\InputData.cs" />
@@ -128,7 +131,6 @@
     <Folder Include="Decorator\OwnProblem\" />
     <Folder Include="Facade\OwnProblem\" />
     <Folder Include="Memento\ExampleProblem\" />
-    <Folder Include="Memento\OwnExample\" />
     <Folder Include="Memento\OwnProblem\" />
     <Folder Include="Strategy\ExampleProblem\" />
     <Folder Include="Strategy\OwnProblem\" />
