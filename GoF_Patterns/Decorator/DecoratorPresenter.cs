@@ -50,6 +50,8 @@ namespace GoF_Patterns.Decorator
         {
             ASpell flyingDragon = new DamageSpell("Flying Dragon");
             flyingDragon = new FireElemental(flyingDragon);
+            flyingDragon = new FireElemental(flyingDragon);
+
             //flyingDragon = new WaterElemental(flyingDragon);
             //flyingDragon = new EarthElemental(flyingDragon);
             flyingDragon = new AirElemental(flyingDragon);

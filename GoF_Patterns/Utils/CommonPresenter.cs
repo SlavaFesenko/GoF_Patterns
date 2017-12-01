@@ -7,6 +7,7 @@ using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
 using GoF_Patterns.Strategy;
 using GoF_Patterns.AbstractFactory;
+using GoF_Patterns.Memento;
 
 namespace GoF_Patterns.Utils
 {
@@ -20,6 +21,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.Facade: FacadePresenter.Present(presentType); break;
                 case PatternType.Strategy: StrategyPresenter.Present(presentType); break;
                 case PatternType.AbstractFactory: AbstractFactoryPresenter.Present(presentType); break;
+                case PatternType.Memento: MementoPresenter.Present(presentType);  break;
             }
         }
     }

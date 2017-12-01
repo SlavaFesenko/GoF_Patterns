@@ -13,7 +13,7 @@ namespace GoF_Patterns
     {
         static void Main(string[] args)
         {
-            CommonPresenter.Present(PatternType.Decorator, PresentType.OwnExample);
+            CommonPresenter.Present(PatternType.Memento, PresentType.Example);
 
             Console.ReadLine();
         }

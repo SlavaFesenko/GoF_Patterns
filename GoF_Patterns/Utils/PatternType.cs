@@ -5,6 +5,7 @@
         Decorator,
         Facade,
         Strategy,
-        AbstractFactory
+        AbstractFactory,
+        Memento
     }
 }

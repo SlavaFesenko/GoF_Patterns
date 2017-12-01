@@ -60,7 +60,14 @@
     <Compile Include="AbstractFactory\Example\WarriorFactory.cs" />
     <Compile Include="Decorator\ExampleProblem\Pizza.cs" />
     <Compile Include="Decorator\Example\Training\Pizza.cs" />
-    <Compile Include="Decorator\OwnExample\ElementalWar.cs" />
+    <Compile Include="Decorator\OwnExample\AirElemental.cs" />
+    <Compile Include="Decorator\OwnExample\ASpellDecorator.cs" />
+    <Compile Include="Decorator\OwnExample\DamageSpell.cs" />
+    <Compile Include="Decorator\OwnExample\DefensiveSpell.cs" />
+    <Compile Include="Decorator\OwnExample\EarthElemental.cs" />
+    <Compile Include="Decorator\OwnExample\ASpell.cs" />
+    <Compile Include="Decorator\OwnExample\FireElemental.cs" />
+    <Compile Include="Decorator\OwnExample\WaterElemental.cs" />
     <Compile Include="Facade\ExampleProblem\Client.cs" />
     <Compile Include="Facade\OwnExample\EmailService.cs" />
     <Compile Include="Facade\OwnExample\ISendService.cs" />
@@ -71,6 +78,9 @@
     <Compile Include="Facade\OwnExample\SendServiceType.cs" />
     <Compile Include="Facade\OwnExample\SettingsLoader.cs" />
     <Compile Include="Facade\OwnExample\SmsService.cs" />
+    <Compile Include="Memento\Example\GameHistoryCaretaker.cs" />
+    <Compile Include="Memento\Example\HeroMemento.cs" />
+    <Compile Include="Memento\Example\HeroOriginator.cs" />
     <Compile Include="Strategy\OwnExample\BernoulliApproach.cs" />
     <Compile Include="Strategy\OwnExample\ICalculationApproach.cs" />
     <Compile Include="Strategy\OwnExample\InputData.cs" />
@@ -80,6 +90,7 @@
     <Compile Include="Strategy\OwnExample\PuassonApproach.cs" />
     <Compile Include="Strategy\StrategyPresenter.cs" />
     <Compile Include="AbstractFactory\AbstractFactoryPresenter.cs" />
+    <Compile Include="Memento\MementoPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -116,6 +127,9 @@
     <Folder Include="AbstractFactory\OwnProblem\" />
     <Folder Include="Decorator\OwnProblem\" />
     <Folder Include="Facade\OwnProblem\" />
+    <Folder Include="Memento\ExampleProblem\" />
+    <Folder Include="Memento\OwnExample\" />
+    <Folder Include="Memento\OwnProblem\" />
     <Folder Include="Strategy\ExampleProblem\" />
     <Folder Include="Strategy\OwnProblem\" />
     <Folder Include="Template\ExampleProblem\" />
