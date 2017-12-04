@@ -6,6 +6,7 @@
         Facade,
         Strategy,
         AbstractFactory,
-        Memento
+        Memento,
+        State
     }
 }
