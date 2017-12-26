@@ -7,6 +7,7 @@
         Strategy,
         AbstractFactory,
         Memento,
-        State
+        State,
+        Composite
     }
 }

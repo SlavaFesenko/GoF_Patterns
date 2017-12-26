@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GoF_Patterns.AbstractFactory;
+using GoF_Patterns.Composite;
 using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
 using GoF_Patterns.Memento;
@@ -25,6 +26,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.AbstractFactory: AbstractFactoryPresenter.Present(presentType); break;
                 case PatternType.Memento: MementoPresenter.Present(presentType); break;
                 case PatternType.State: StatePresenter.Present(presentType);  break;
+                case PatternType.Composite: CompositePresenter.Present(presentType); break;
             }
         }
     }

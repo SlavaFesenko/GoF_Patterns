@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using GoF_Patterns.Decorator.Example;
 using GoF_Patterns.Decorator.OwnExample;
 using GoF_Patterns.Utils;
@@ -20,9 +19,8 @@ namespace GoF_Patterns.Decorator
                 case PresentType.OwnExample: PresentOwnExample(); break;
                 case PresentType.OwnProblem: PresentOwnExample(); break;
             }
-
         }
-
+        
         private static void PresentExample()
         {
             APizza pizza1 = new ItalianPizza();

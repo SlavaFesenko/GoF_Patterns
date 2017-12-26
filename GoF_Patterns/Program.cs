@@ -11,9 +11,9 @@ namespace GoF_Patterns
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            CommonPresenter.Present(PatternType.State, PresentType.OwnProblem);
+            CommonPresenter.Present(PatternType.Composite, PresentType.OwnExample);
 
             Console.ReadLine();
         }
