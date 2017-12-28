@@ -58,7 +58,12 @@
     <Compile Include="AbstractFactory\Example\RunMovement.cs" />
     <Compile Include="AbstractFactory\Example\Sword.cs" />
     <Compile Include="AbstractFactory\Example\WarriorFactory.cs" />
-    <Compile Include="Adapter\Example\Class1.cs" />
+    <Compile Include="Adapter\Example\Camel.cs" />
+    <Compile Include="Adapter\Example\CamelToTransportAdapter.cs" />
+    <Compile Include="Adapter\Example\Auto.cs" />
+    <Compile Include="Adapter\Example\Driver.cs" />
+    <Compile Include="Adapter\Example\IAnimal.cs" />
+    <Compile Include="Adapter\Example\ITransport.cs" />
     <Compile Include="Composite\Example\Component.cs" />
     <Compile Include="Composite\Example\Directory.cs" />
     <Compile Include="Composite\Example\File.cs" />
