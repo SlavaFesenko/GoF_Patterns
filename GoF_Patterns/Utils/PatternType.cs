@@ -9,6 +9,7 @@
         Memento = 5,
         State = 6,
         Composite = 7,
-        Proxy = 8
+        Proxy = 8,
+        Adapter = 9
     }
 }

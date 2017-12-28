@@ -1,18 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GoF_Patterns.Decorator.Example;
+using GoF_Patterns.Adapter.Example;
 using GoF_Patterns.Utils;
 
-namespace GoF_Patterns.Template
+namespace GoF_Patterns.Adapter
 {
-    class TemplatePresenter: IPresenter
+    class AdapterPresenter : IPresenter
     {
         public void PresentExample()
         {
-            throw new NotImplementedException();
+            Driver driver = new Driver();
+
+            driver.Travel(new Auto());
+
+            var camelTransport = new CamelToTransportAdapter(new Camel());
+
+            driver.Travel(camelTransport);
         }
 
         public void PresentExampleProblem()

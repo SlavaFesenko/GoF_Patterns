@@ -58,6 +58,7 @@
     <Compile Include="AbstractFactory\Example\RunMovement.cs" />
     <Compile Include="AbstractFactory\Example\Sword.cs" />
     <Compile Include="AbstractFactory\Example\WarriorFactory.cs" />
+    <Compile Include="Adapter\Example\Class1.cs" />
     <Compile Include="Composite\Example\Component.cs" />
     <Compile Include="Composite\Example\Directory.cs" />
     <Compile Include="Composite\Example\File.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="State\StatePresenter.cs" />
     <Compile Include="Composite\CompositePresenter.cs" />
     <Compile Include="Proxy\ProxyPresenter.cs" />
+    <Compile Include="Adapter\AdapterPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -154,6 +156,9 @@
   <ItemGroup>
     <Folder Include="AbstractFactory\OwnExample\" />
     <Folder Include="AbstractFactory\OwnProblem\" />
+    <Folder Include="Adapter\ExampleProblem\" />
+    <Folder Include="Adapter\OwnExample\" />
+    <Folder Include="Adapter\OwnProblem\" />
     <Folder Include="Composite\ExampleProblem\" />
     <Folder Include="Composite\OwnProblem\" />
     <Folder Include="Decorator\OwnProblem\" />

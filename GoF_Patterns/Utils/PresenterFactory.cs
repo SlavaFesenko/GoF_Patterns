@@ -1,4 +1,5 @@
 ﻿using GoF_Patterns.AbstractFactory;
+using GoF_Patterns.Adapter;
 using GoF_Patterns.Composite;
 using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
@@ -10,7 +11,6 @@ using GoF_Patterns.Template;
 
 namespace GoF_Patterns.Utils
 {
-
     static class PresenterFactory
     {
         public static IPresenter GetPresenter(PatternType patternType)
@@ -27,11 +27,10 @@ namespace GoF_Patterns.Utils
                 case PatternType.State: presenter = new StatePresenter();  break;
                 case PatternType.Composite: presenter = new CompositePresenter(); break;
                 case PatternType.Proxy: presenter = new ProxyPresenter(); break;
+                case PatternType.Adapter: presenter = new AdapterPresenter(); break;
             }
 
             return presenter;
         }
     }
-
-
 }
