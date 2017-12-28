@@ -8,6 +8,7 @@ using GoF_Patterns.Composite;
 using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
 using GoF_Patterns.Memento;
+using GoF_Patterns.Proxy;
 using GoF_Patterns.State;
 using GoF_Patterns.Strategy;
 
@@ -27,6 +28,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.Memento: MementoPresenter.Present(presentType); break;
                 case PatternType.State: StatePresenter.Present(presentType);  break;
                 case PatternType.Composite: CompositePresenter.Present(presentType); break;
+                case PatternType.Proxy: ProxyPresenter.Present(presentType); break;
             }
         }
     }

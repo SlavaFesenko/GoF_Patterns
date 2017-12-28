@@ -90,6 +90,7 @@
     <Compile Include="Memento\OwnExample\TownOriginator.cs" />
     <Compile Include="Memento\OwnExample\TownCheckPointsCaretaker.cs" />
     <Compile Include="Memento\OwnExample\TownMemento.cs" />
+    <Compile Include="Proxy\OwnExample\Class1.cs" />
     <Compile Include="State\ExampleProblem\EPWater.cs" />
     <Compile Include="State\Example\Water.cs" />
     <Compile Include="State\Example\GasWaterState.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Memento\MementoPresenter.cs" />
     <Compile Include="State\StatePresenter.cs" />
     <Compile Include="Composite\CompositePresenter.cs" />
+    <Compile Include="Proxy\ProxyPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -156,6 +158,9 @@
     <Folder Include="Facade\OwnProblem\" />
     <Folder Include="Memento\ExampleProblem\" />
     <Folder Include="Memento\OwnProblem\" />
+    <Folder Include="Proxy\ExampleProblem\" />
+    <Folder Include="Proxy\Example\" />
+    <Folder Include="Proxy\OwnProblem\" />
     <Folder Include="Strategy\ExampleProblem\" />
     <Folder Include="Strategy\OwnProblem\" />
     <Folder Include="Template\ExampleProblem\" />

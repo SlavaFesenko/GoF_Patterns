@@ -2,12 +2,13 @@
 {
     enum PatternType
     {
-        Decorator,
-        Facade,
-        Strategy,
-        AbstractFactory,
-        Memento,
-        State,
-        Composite
+        Decorator = 1,
+        Facade = 2,
+        Strategy = 3,
+        AbstractFactory = 4,
+        Memento = 5,
+        State = 6,
+        Composite = 7,
+        Proxy = 8
     }
 }
