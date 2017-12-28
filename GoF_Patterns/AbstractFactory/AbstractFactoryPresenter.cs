@@ -4,20 +4,9 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.AbstractFactory
 {
-    static class AbstractFactoryPresenter
+    class AbstractFactoryPresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnExample(); break;
-            }
-        }
-
-        private static void PresentExample()
+        void IPresenter.PresentExample()
         {
             Hero elven = new Hero(new ElvenFactory());
             elven.Hit();
@@ -28,19 +17,20 @@ namespace GoF_Patterns.AbstractFactory
             warrior.Run();
         }
 
-        private static void PresentExampleProblem()
+        void IPresenter.PresentExampleProblem()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentOwnExample()
+        void IPresenter.PresentOwnExample()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentOwnProblem()
+        void IPresenter.PresentOwnProblem()
         {
             throw new NotImplementedException();
         }
+
     }
 }

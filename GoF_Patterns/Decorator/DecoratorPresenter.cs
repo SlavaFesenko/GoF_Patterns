@@ -8,20 +8,9 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Decorator
 {
-    static class DecoratorPresenter
+    class DecoratorPresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnExample(); break;
-            }
-        }
-        
-        private static void PresentExample()
+        public void PresentExample()
         {
             APizza pizza1 = new ItalianPizza();
             pizza1 = new TomatoPizza(pizza1); // Italian pizza with tomato
@@ -37,14 +26,14 @@ namespace GoF_Patterns.Decorator
             Console.WriteLine($"Name: {pizza3.Name}, cost: {pizza3.GetCost()}");
         }
 
-        private static void PresentExampleProblem()
+        public void PresentExampleProblem()
         {
             // огромная иерархия наследования, и то, далеко не все варианты
             ExampleProblem.ItalianPizza pizza = new ExampleProblem.ItalianPizza();
             Console.WriteLine($"Name: {pizza.Name}, cost: {pizza.Cost}");
         }
 
-        private static void PresentOwnExample()
+        public void PresentOwnExample()
         {
             ASpell flyingDragon = new DamageSpell("Flying Dragon");
             flyingDragon = new FireElemental(flyingDragon);
@@ -70,9 +59,10 @@ namespace GoF_Patterns.Decorator
                               $" air = {iceWall.AirPoints()};");
         }
 
-        private static void PresentOwnProblem()
+        public void PresentOwnProblem()
         {
             throw new NotImplementedException();
         }
+
     }
 }

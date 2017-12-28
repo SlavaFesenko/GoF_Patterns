@@ -4,30 +4,19 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Proxy
 {
-    static class ProxyPresenter
+    class ProxyPresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnExample(); break;
-            }
-        }
-
-        private static void PresentExample()
+        public void PresentExample()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentExampleProblem()
+        public void PresentExampleProblem()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentOwnExample()
+        public void PresentOwnExample()
         {
             ASubject logStorage = new LogStorageProxy();
             var page = logStorage.GetPage(0);
@@ -41,7 +30,7 @@ namespace GoF_Patterns.Proxy
             Console.WriteLine(page);
         }
 
-        private static void PresentOwnProblem()
+        public void PresentOwnProblem()
         {
             throw new NotImplementedException();
         }

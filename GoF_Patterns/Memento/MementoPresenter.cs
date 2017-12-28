@@ -5,20 +5,9 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Memento
 {
-    static class MementoPresenter
+    class MementoPresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnExample(); break;
-            }
-        }
-
-        private static void PresentExample()
+        public void PresentExample()
         {
             HeroOriginator hero = new HeroOriginator(); // 10 cartidges
             hero.Shoot(); // 9 cartidges
@@ -31,12 +20,12 @@ namespace GoF_Patterns.Memento
             hero.Shoot(); // 8 cartidges
         }
 
-        private static void PresentExampleProblem()
+        public void PresentExampleProblem()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentOwnExample()
+        public void PresentOwnExample()
         {
             TownOriginator town = new TownOriginator(); // 10
             town.Interact(5);  // 15
@@ -46,9 +35,10 @@ namespace GoF_Patterns.Memento
             town.RestoreTown(careTaker.TownCheckPoints.Pop()); // 15
         }
 
-        private static void PresentOwnProblem()
+        public void PresentOwnProblem()
         {
             throw new NotImplementedException();
         }
+
     }
 }

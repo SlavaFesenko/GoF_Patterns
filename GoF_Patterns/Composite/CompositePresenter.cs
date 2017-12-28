@@ -6,20 +6,9 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Composite
 {
-    static class CompositePresenter
+    class CompositePresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnExample(); break;
-            }
-        }
-
-        private static void PresentExample()
+        public void PresentExample()
         {
             Component fileSystem = new Directory("File system");
             Component driveC = new Directory("DriveC");
@@ -44,12 +33,12 @@ namespace GoF_Patterns.Composite
             fileSystem.Print();
         }
 
-        private static void PresentExampleProblem()
+        public void PresentExampleProblem()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentOwnExample()
+        public void PresentOwnExample()
         {
             XmlComponent html = new XmlNode("html");
             XmlComponent content = new XmlNode("content");
@@ -62,9 +51,10 @@ namespace GoF_Patterns.Composite
             html.Print();
         }
 
-        private static void PresentOwnProblem()
+        public void PresentOwnProblem()
         {
             throw new NotImplementedException();
         }
+
     }
 }

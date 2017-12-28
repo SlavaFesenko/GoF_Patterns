@@ -7,29 +7,17 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.State
 {
-    static class StatePresenter
+    class StatePresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnProblem(); break;
-            }
-        }
-
-        private static void PresentExample()
+        public void PresentExample()
         {
             Water water = new Water(new LiquidWaterState());
             water.Heat();
             water.Frost();
             water.Frost();
-
         }
 
-        private static void PresentExampleProblem()
+        public void PresentExampleProblem()
         {
             EPWater water = new EPWater(WaterState.Liquid);
             water.Frost();
@@ -37,7 +25,7 @@ namespace GoF_Patterns.State
             water.Heat();
         }
 
-        private static void PresentOwnExample()
+        public void PresentOwnExample()
         {
             OeCrupier croupier = new OeCrupier(new NewDeckState());
             for (int i = 0; i < 10; i++)
@@ -46,14 +34,13 @@ namespace GoF_Patterns.State
             }
         }
 
-        private static void PresentOwnProblem()
+        public void PresentOwnProblem()
         {
             Croupier croupier = new Croupier();
             for (int i = 0; i < 10; i++)
             {
                 croupier.GetCard();
             }
-            
         }
     }
 }

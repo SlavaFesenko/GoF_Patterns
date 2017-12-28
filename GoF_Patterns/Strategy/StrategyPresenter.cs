@@ -6,21 +6,9 @@ using GoF_Patterns.Utils;
 
 namespace GoF_Patterns.Strategy
 {
-    static class StrategyPresenter
+    class StrategyPresenter : IPresenter
     {
-        public static void Present(PresentType presentType)
-        {
-            switch (presentType)
-            {
-                case PresentType.Example: PresentExample(); break;
-                case PresentType.ExampleProblem: PresentExampleProblem(); break;
-                case PresentType.OwnExample: PresentOwnExample(); break;
-                case PresentType.OwnProblem: PresentOwnExample(); break;
-            }
-
-        }
-
-        private static void PresentExample()
+        public void PresentExample()
         {
             Car car = new Car(new PatrolMove());
             car.MoveAhead();
@@ -29,12 +17,12 @@ namespace GoF_Patterns.Strategy
             car.MoveAhead();
         }
 
-        private static void PresentExampleProblem()
+        public void PresentExampleProblem()
         {
             throw new NotImplementedException();
         }
 
-        private static void PresentOwnExample()
+        public void PresentOwnExample()
         {
             ProbabilityCalculator calculator = new ProbabilityCalculator(new BernoulliApproach());
             var input = new InputData(5, 15, 45.5, true);
@@ -50,7 +38,7 @@ namespace GoF_Patterns.Strategy
             Console.WriteLine($"Result: {output3.P}; Step solution: {output3.StepSolution}");
         }
 
-        private static void PresentOwnProblem()
+        public void PresentOwnProblem()
         {
             throw new NotImplementedException();
         }

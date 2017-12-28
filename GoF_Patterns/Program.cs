@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GoF_Patterns.Facade;
-using GoF_Patterns.Decorator;
 using GoF_Patterns.Utils;
 
 namespace GoF_Patterns
@@ -13,7 +7,7 @@ namespace GoF_Patterns
     {
         static void Main()
         {
-            CommonPresenter.Present(PatternType.Proxy, PresentType.OwnExample);
+            PresenterFactory.GetPresenter(PatternType.Composite).PresentOwnExample();
 
             Console.ReadLine();
         }
