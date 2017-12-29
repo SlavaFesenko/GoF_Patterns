@@ -64,6 +64,12 @@
     <Compile Include="Adapter\Example\Driver.cs" />
     <Compile Include="Adapter\Example\IAnimal.cs" />
     <Compile Include="Adapter\Example\ITransport.cs" />
+    <Compile Include="Bridge\Example\CppLanguage.cs" />
+    <Compile Include="Bridge\Example\CorporateProgrammer.cs" />
+    <Compile Include="Bridge\Example\CSharpLanguage.cs" />
+    <Compile Include="Bridge\Example\FreelanceProgrammer.cs" />
+    <Compile Include="Bridge\Example\ILanguage.cs" />
+    <Compile Include="Bridge\Example\Programmer.cs" />
     <Compile Include="Composite\Example\Component.cs" />
     <Compile Include="Composite\Example\Directory.cs" />
     <Compile Include="Composite\Example\File.cs" />
@@ -127,6 +133,7 @@
     <Compile Include="Composite\CompositePresenter.cs" />
     <Compile Include="Proxy\ProxyPresenter.cs" />
     <Compile Include="Adapter\AdapterPresenter.cs" />
+    <Compile Include="Bridge\BridgePresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -164,6 +171,9 @@
     <Folder Include="Adapter\ExampleProblem\" />
     <Folder Include="Adapter\OwnExample\" />
     <Folder Include="Adapter\OwnProblem\" />
+    <Folder Include="Bridge\ExampleProblem\" />
+    <Folder Include="Bridge\OwnExample\" />
+    <Folder Include="Bridge\OwnProblem\" />
     <Folder Include="Composite\ExampleProblem\" />
     <Folder Include="Composite\OwnProblem\" />
     <Folder Include="Decorator\OwnProblem\" />

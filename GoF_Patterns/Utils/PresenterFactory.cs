@@ -1,5 +1,6 @@
 ﻿using GoF_Patterns.AbstractFactory;
 using GoF_Patterns.Adapter;
+using GoF_Patterns.Bridge;
 using GoF_Patterns.Composite;
 using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
@@ -28,6 +29,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.Composite: presenter = new CompositePresenter(); break;
                 case PatternType.Proxy: presenter = new ProxyPresenter(); break;
                 case PatternType.Adapter: presenter = new AdapterPresenter(); break;
+                case PatternType.Bridge: presenter = new BridgePresenter(); break;
             }
 
             return presenter;

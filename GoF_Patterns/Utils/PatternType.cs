@@ -10,6 +10,7 @@
         State = 6,
         Composite = 7,
         Proxy = 8,
-        Adapter = 9
+        Adapter = 9,
+        Bridge = 10
     }
 }
