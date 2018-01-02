@@ -4,6 +4,7 @@ using GoF_Patterns.Bridge;
 using GoF_Patterns.Composite;
 using GoF_Patterns.Decorator;
 using GoF_Patterns.Facade;
+using GoF_Patterns.Flyweight;
 using GoF_Patterns.Memento;
 using GoF_Patterns.Proxy;
 using GoF_Patterns.State;
@@ -30,6 +31,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.Proxy: presenter = new ProxyPresenter(); break;
                 case PatternType.Adapter: presenter = new AdapterPresenter(); break;
                 case PatternType.Bridge: presenter = new BridgePresenter(); break;
+                case PatternType.Flyweight: presenter = new FlyweightPresenter(); break;
             }
 
             return presenter;

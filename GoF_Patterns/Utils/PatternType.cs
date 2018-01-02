@@ -11,6 +11,7 @@
         Composite = 7,
         Proxy = 8,
         Adapter = 9,
-        Bridge = 10
+        Bridge = 10,
+        Flyweight = 11
     }
 }

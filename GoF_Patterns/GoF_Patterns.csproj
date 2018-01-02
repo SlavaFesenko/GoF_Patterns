@@ -96,6 +96,7 @@
     <Compile Include="Facade\OwnExample\SendServiceType.cs" />
     <Compile Include="Facade\OwnExample\SettingsLoader.cs" />
     <Compile Include="Facade\OwnExample\SmsService.cs" />
+    <Compile Include="Flyweight\Example\Class1.cs" />
     <Compile Include="Memento\Example\GameHistoryCaretaker.cs" />
     <Compile Include="Memento\Example\HeroMemento.cs" />
     <Compile Include="Memento\Example\HeroOriginator.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="Proxy\ProxyPresenter.cs" />
     <Compile Include="Adapter\AdapterPresenter.cs" />
     <Compile Include="Bridge\BridgePresenter.cs" />
+    <Compile Include="Flyweight\FlyweightPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -178,6 +180,9 @@
     <Folder Include="Composite\OwnProblem\" />
     <Folder Include="Decorator\OwnProblem\" />
     <Folder Include="Facade\OwnProblem\" />
+    <Folder Include="Flyweight\ExampleProblem\" />
+    <Folder Include="Flyweight\OwnExample\" />
+    <Folder Include="Flyweight\OwnProblem\" />
     <Folder Include="Memento\ExampleProblem\" />
     <Folder Include="Memento\OwnProblem\" />
     <Folder Include="Proxy\ExampleProblem\" />
