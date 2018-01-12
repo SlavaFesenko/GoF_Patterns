@@ -96,7 +96,10 @@
     <Compile Include="Facade\OwnExample\SendServiceType.cs" />
     <Compile Include="Facade\OwnExample\SettingsLoader.cs" />
     <Compile Include="Facade\OwnExample\SmsService.cs" />
-    <Compile Include="Flyweight\Example\Class1.cs" />
+    <Compile Include="Flyweight\Example\BrickHouse.cs" />
+    <Compile Include="Flyweight\Example\House.cs" />
+    <Compile Include="Flyweight\Example\HouseFactory.cs" />
+    <Compile Include="Flyweight\Example\PanelHouse.cs" />
     <Compile Include="Memento\Example\GameHistoryCaretaker.cs" />
     <Compile Include="Memento\Example\HeroMemento.cs" />
     <Compile Include="Memento\Example\HeroOriginator.cs" />
