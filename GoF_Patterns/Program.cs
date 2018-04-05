@@ -7,7 +7,7 @@ namespace GoF_Patterns
     {
         static void Main()
         {
-            PresenterFactory.GetPresenter(PatternType.Memento).PresentExample();
+            PresenterFactory.GetPresenter(PatternType.Flyweight).PresentExample(); // test hotfix
 
             Console.ReadLine();
         }
