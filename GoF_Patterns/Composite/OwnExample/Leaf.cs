@@ -19,13 +19,18 @@ namespace GoF_Patterns.Composite.OwnExample
 
         public override void Print(int depth = 0)
         {
-            string separator = GetDepthSeparator(depth);
-            Console.WriteLine($"{separator}#{Id}: {Name}:");
+            string separator = CompositeUtils.GetDepthSeparator(depth);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"{separator}#{Id}: '{Name}':");
+            Console.ResetColor();
 
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            separator = CompositeUtils.GetDepthSeparator(depth + 1);
             foreach (var usId in UssIds)
             {
                 Console.WriteLine($"{separator} US #{usId};");
             }
+            Console.ResetColor();
         }
 
         public override void Add(int componentHierarchyId)

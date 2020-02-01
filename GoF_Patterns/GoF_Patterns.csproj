@@ -77,6 +77,7 @@
     <Compile Include="Composite\OwnExample\ComponentsRepository.cs" />
     <Compile Include="Composite\OwnExample\ComponentXmlSerializer.cs" />
     <Compile Include="Composite\OwnExample\Composite.cs" />
+    <Compile Include="Composite\OwnExample\CompositeUtils.cs" />
     <Compile Include="Composite\OwnExample\Leaf.cs" />
     <Compile Include="Decorator\ExampleProblem\Pizza.cs" />
     <Compile Include="Decorator\Example\Training\Pizza.cs" />

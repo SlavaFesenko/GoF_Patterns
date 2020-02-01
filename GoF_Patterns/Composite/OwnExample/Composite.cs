@@ -25,8 +25,11 @@ namespace GoF_Patterns.Composite.OwnExample
 
         public override void Print(int depth = 0)
         {
-            string separator = GetDepthSeparator(depth);
-            Console.WriteLine($"{separator}#{Id}: {Name}:");
+            string separator = CompositeUtils.GetDepthSeparator(depth);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"{separator}#{Id}: '{Name}':");
+            Console.ResetColor();
+
             foreach (var id in ChildsIds)
             {
                 var component = _repo.GetAComponentById(id);
