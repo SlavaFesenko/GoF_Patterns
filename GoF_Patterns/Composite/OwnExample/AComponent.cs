@@ -10,6 +10,7 @@ namespace GoF_Patterns.Composite.OwnExample
     public abstract class AComponent
     {
         public int Id { get; set; }
+        public int ParentId { get; set; }
         public string Name { get; set; }
 
         public AComponent()
@@ -24,7 +25,7 @@ namespace GoF_Patterns.Composite.OwnExample
         }
 
         public abstract void Print(int depth = 0);
-        public abstract void Add(int componentHierarchyId);
-        public abstract void Delete(int componentHierarchyId);
+        public abstract void Add(AComponent child);
+        public abstract void Delete(AComponent child);
     }
 }

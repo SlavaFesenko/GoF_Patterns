@@ -13,14 +13,15 @@ namespace GoF_Patterns.Composite.OwnExample
         public Composite() : base() { }
         public Composite(int hierarchyId, string hierarchyName) : base(hierarchyId, hierarchyName) { }
         
-        public override void Add(int componentHierarchyId)
+        public override void Add(AComponent child)
         {
-            ChildsIds.Add(componentHierarchyId);
+            child.ParentId = Id;
+            ChildsIds.Add(child.Id);
         }
 
-        public override void Delete(int componentHierarchyId)
+        public override void Delete(AComponent child)
         {
-            ChildsIds.Remove(componentHierarchyId);
+            ChildsIds.Remove(child.Id);
         }
 
         public override void Print(int depth = 0)

@@ -33,12 +33,12 @@ namespace GoF_Patterns.Composite.OwnExample
             Console.ResetColor();
         }
 
-        public override void Add(int componentHierarchyId)
+        public override void Add(AComponent child)
         {
             throw new NotImplementedException();
         }
 
-        public override void Delete(int componentHierarchyId)
+        public override void Delete(AComponent child)
         {
             throw new NotImplementedException();
         }
