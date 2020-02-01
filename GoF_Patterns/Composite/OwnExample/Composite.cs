@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 
 namespace GoF_Patterns.Composite.OwnExample
 {
-    class Composite : AComponent
+    [Serializable]
+    public class Composite : AComponent
     {
         private ComponentsRepository _repo = new ComponentsRepository();
         public List<int> ChildsIds = new List<int>();
 
+        public Composite() : base() { }
         public Composite(int hierarchyId, string hierarchyName) : base(hierarchyId, hierarchyName) { }
         
         public override void Add(int componentHierarchyId)

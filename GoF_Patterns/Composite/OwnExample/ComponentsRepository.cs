@@ -8,6 +8,11 @@ namespace GoF_Patterns.Composite.OwnExample
     {
         public List<AComponent> GetAComponents()
         {
+            return ComponentXmlSerializer.ReadUsList(Fetch());
+        }
+
+        public static List<AComponent> Fetch()
+        {
             var c1 = new Composite(1, "Programming");
             var c3 = new Composite(3, "C#"); c1.Add(c3.Id);
             var c5 = new Leaf(5, "Multicurrency"); c3.Add(c5.Id);
@@ -20,7 +25,7 @@ namespace GoF_Patterns.Composite.OwnExample
             var c0 = new Composite(0, "Object");
             c0.Add(c1.Id); c0.Add(c2.Id);
 
-            return new List<AComponent>() 
+            return new List<AComponent>()
             {
                 c0, c1, c2, c3, c4, c5
             };

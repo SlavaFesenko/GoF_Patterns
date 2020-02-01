@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GoF_Patterns.Composite.OwnExample
 {
     [Serializable]
-    class Leaf : AComponent
+    public class Leaf : AComponent
     {
         public List<int> UssIds = new List<int>();
+
+        public Leaf() : base() { }
         public Leaf(int hierarchyId, string hierarchyName) : base(hierarchyId, hierarchyName) { }
 
       
