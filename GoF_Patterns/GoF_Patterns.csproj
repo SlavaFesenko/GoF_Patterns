@@ -73,9 +73,10 @@
     <Compile Include="Composite\Example\Component.cs" />
     <Compile Include="Composite\Example\Directory.cs" />
     <Compile Include="Composite\Example\File.cs" />
-    <Compile Include="Composite\OwnExample\XmlComponent.cs" />
-    <Compile Include="Composite\OwnExample\XmlLeaf.cs" />
-    <Compile Include="Composite\OwnExample\XmlNode.cs" />
+    <Compile Include="Composite\OwnExample\AComponent.cs" />
+    <Compile Include="Composite\OwnExample\ComponentsRepository.cs" />
+    <Compile Include="Composite\OwnExample\Composite.cs" />
+    <Compile Include="Composite\OwnExample\Leaf.cs" />
     <Compile Include="Decorator\ExampleProblem\Pizza.cs" />
     <Compile Include="Decorator\Example\Training\Pizza.cs" />
     <Compile Include="Decorator\OwnExample\AirElemental.cs" />

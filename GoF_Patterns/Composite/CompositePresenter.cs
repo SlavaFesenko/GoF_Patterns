@@ -40,15 +40,10 @@ namespace GoF_Patterns.Composite
 
         public void PresentOwnExample()
         {
-            XmlComponent html = new XmlNode("html");
-            XmlComponent content = new XmlNode("content");
-            XmlComponent body = new XmlNode("body");
-            html.Add(content);
-            html.Add(body);
-            XmlLeaf label = new XmlLeaf("Main label");
-            body.Add(label);
+            ComponentsRepository repo = new ComponentsRepository();
+            var c0 = repo.GetAComponentById(0);
 
-            html.Print();
+            c0.Print();
         }
 
         public void PresentOwnProblem()

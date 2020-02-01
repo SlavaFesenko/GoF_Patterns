@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GoF_Patterns.Composite.Example
 {
@@ -16,6 +13,7 @@ namespace GoF_Patterns.Composite.Example
 
         public virtual void Print()
         {
+            Console.WriteLine();
             Console.WriteLine(Name);
         }
 

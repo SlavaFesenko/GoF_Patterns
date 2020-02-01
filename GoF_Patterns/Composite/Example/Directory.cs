@@ -20,8 +20,8 @@ namespace GoF_Patterns.Composite.Example
 
         public override void Print()
         {
-            Console.WriteLine($"Node: {Name}");
-            Console.WriteLine("Subnodes: ");
+            Console.WriteLine($"Current Node Name: {Name}");
+            Console.WriteLine("Subnodes:  ");
             foreach (var component in _components)
             {
                 component.Print();
