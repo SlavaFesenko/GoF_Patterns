@@ -9,6 +9,7 @@ namespace GoF_Patterns.Template
         public void PresentExample()
         {
             RemoteControlInvoker rci = new RemoteControlInvoker();
+            rci.PressTurnOnButton();
 
             TVReceiver tv = new TVReceiver();
             ICommand tvOnCommand = new TvOnCommand(tv);

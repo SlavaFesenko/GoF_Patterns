@@ -71,6 +71,7 @@
     <Compile Include="Bridge\Example\ILanguage.cs" />
     <Compile Include="Bridge\Example\Programmer.cs" />
     <Compile Include="Command\Example\AntennaOnCommand.cs" />
+    <Compile Include="Command\Example\DefaultCommand.cs" />
     <Compile Include="Command\Example\ICommand.cs" />
     <Compile Include="Command\Example\RemoteControlInvoker.cs" />
     <Compile Include="Command\Example\TvAntennaReceiver.cs" />

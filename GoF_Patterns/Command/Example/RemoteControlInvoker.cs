@@ -10,6 +10,11 @@ namespace GoF_Patterns.Command.Example
     {
         ICommand _command;
 
+        public RemoteControlInvoker()
+        {
+            _command = new DefaultCommand();
+        }
+
         public void SetCommand(ICommand command)
         {
             _command = command;
