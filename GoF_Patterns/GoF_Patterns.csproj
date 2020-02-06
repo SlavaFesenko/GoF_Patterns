@@ -70,6 +70,12 @@
     <Compile Include="Bridge\Example\FreelanceProgrammer.cs" />
     <Compile Include="Bridge\Example\ILanguage.cs" />
     <Compile Include="Bridge\Example\Programmer.cs" />
+    <Compile Include="Command\Example\AntennaOnCommand.cs" />
+    <Compile Include="Command\Example\ICommand.cs" />
+    <Compile Include="Command\Example\RemoteControlInvoker.cs" />
+    <Compile Include="Command\Example\TvAntennaReceiver.cs" />
+    <Compile Include="Command\Example\TvOnCommand.cs" />
+    <Compile Include="Command\Example\TVReceiver.cs" />
     <Compile Include="Composite\Example\Component.cs" />
     <Compile Include="Composite\Example\Directory.cs" />
     <Compile Include="Composite\Example\File.cs" />
@@ -142,6 +148,7 @@
     <Compile Include="Adapter\AdapterPresenter.cs" />
     <Compile Include="Bridge\BridgePresenter.cs" />
     <Compile Include="Flyweight\FlyweightPresenter.cs" />
+    <Compile Include="Command\CommandPresenter.cs" />
     <Compile Include="Template\TemplatePresenter.cs" />
     <Compile Include="Decorator\Example\APizza.cs" />
     <Compile Include="Decorator\Example\APizzaDecorator.cs" />
@@ -182,6 +189,9 @@
     <Folder Include="Bridge\ExampleProblem\" />
     <Folder Include="Bridge\OwnExample\" />
     <Folder Include="Bridge\OwnProblem\" />
+    <Folder Include="Command\ExampleProblem\" />
+    <Folder Include="Command\OwnExample\" />
+    <Folder Include="Command\OwnProblem\" />
     <Folder Include="Composite\ExampleProblem\" />
     <Folder Include="Composite\OwnProblem\" />
     <Folder Include="Decorator\OwnProblem\" />
