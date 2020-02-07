@@ -70,7 +70,15 @@
     <Compile Include="Bridge\Example\FreelanceProgrammer.cs" />
     <Compile Include="Bridge\Example\ILanguage.cs" />
     <Compile Include="Bridge\Example\Programmer.cs" />
-    <Compile Include="Command\ExampleProblem\ICommand.cs" />
+    <Compile Include="Command\ExampleProblem\AbstractCommands\MacroCommand.cs" />
+    <Compile Include="Command\ExampleProblem\ConcreteCommands\MarketerCommand.cs" />
+    <Compile Include="Command\ExampleProblem\ConcreteCommands\ProgrammerCommand.cs" />
+    <Compile Include="Command\ExampleProblem\ConcreteCommands\QaCommand.cs" />
+    <Compile Include="Command\ExampleProblem\Invokers\ManagerInvoker.cs" />
+    <Compile Include="Command\ExampleProblem\AbstractCommands\ICommand.cs" />
+    <Compile Include="Command\ExampleProblem\ConcreteReceivers\MarketerReceiver.cs" />
+    <Compile Include="Command\ExampleProblem\ConcreteReceivers\ProgrammerReceiver.cs" />
+    <Compile Include="Command\ExampleProblem\ConcreteReceivers\QaReceiver.cs" />
     <Compile Include="Command\Example\Antenna\AntennaOnCommand.cs" />
     <Compile Include="Command\Example\CommandStuff\DefaultCommand.cs" />
     <Compile Include="Command\Example\CommandStuff\ICommand.cs" />
