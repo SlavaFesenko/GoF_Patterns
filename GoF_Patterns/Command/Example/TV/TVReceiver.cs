@@ -4,25 +4,45 @@ namespace GoF_Patterns.Command.Example
 {
     public class TVReceiver
     {
-        bool _isTurnedOff = true;
+        bool _isTurnedOn = true;
 
-        public bool IsTurnededOff()
+        int _currentVolume = 0;
+        const int MinVolume = 0;
+        const int MaxVolume = 1;
+
+        public bool IsTurnedOn()
         {
-            return _isTurnedOff;
+            return _isTurnedOn;
         }
 
         public void TurnOn()
         {
-            _isTurnedOff = true;
+            _isTurnedOn = true;
 
             Console.WriteLine("TV turned On");
         }
 
         public void TurnOff()
         {
-            _isTurnedOff = false;
+            _isTurnedOn = false;
 
             Console.WriteLine("TV turned Off");
+        }
+
+        public void IncreaseVolume()
+        {
+            if (_currentVolume < MaxVolume)
+                _currentVolume++;
+
+            Console.WriteLine($"_currentVolume == {_currentVolume}");
+        }
+
+        public void DecreaseVolume()
+        {
+            if (_currentVolume > MinVolume)
+                _currentVolume--;
+
+            Console.WriteLine($"_currentVolume == {_currentVolume}");
         }
     }
 }

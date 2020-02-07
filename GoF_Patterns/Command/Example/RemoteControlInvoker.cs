@@ -1,38 +1,42 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GoF_Patterns.Command.Example
 {
     public class RemoteControlInvoker
     {
-        ICommand _command;
+        private ICommand[] _commands;
+        Stack<ICommand> _commandsLog = new Stack<ICommand>();
 
-        public RemoteControlInvoker()
+        public RemoteControlInvoker(int commandsCount)
         {
-            _command = new DefaultCommand();
+            _commands = new ICommand[commandsCount];
+
+            for (int i = 0; i < _commands.Length; i++)
+                _commands[i] = new DefaultCommand();
         }
 
-        public void SetCommand(ICommand command)
+        public void SetCommand(int commandNo, ICommand command)
         {
-            _command = command;
+            _commands[commandNo] = command;
         }
 
-        public bool IsExecutionPossible()
+        public bool IsExecutionPossible(int commandNo)
         {
-            return _command.IsExecutionPossible();
+            return _commands[commandNo].IsExecutionPossible();
         }
 
-        public void PressTurnOnButton()
+        public void PressTurnOnButton(int commandNo)
         {
-            _command.Execute();
+            _commands[commandNo].Execute();
+            _commandsLog.Push(_commands[commandNo]);
         }
 
         public void PressTurnOffButton()
         {
-            _command.Undo();
+            if (_commandsLog?.Any() ?? true)
+                _commandsLog.Pop().Undo();
         }
     }
 }

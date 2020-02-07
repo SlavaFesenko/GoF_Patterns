@@ -4,30 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoF_Patterns.Command.Example
+namespace GoF_Patterns.Command.Example.TV
 {
-    class TvOnCommand : ICommand
+    class VolumeCommand : ICommand
     {
-        TVReceiver _tvReceiver;
-
-        public TvOnCommand(TVReceiver tvReceiver)
+        TVReceiver _tVReceiver;
+        public VolumeCommand(TVReceiver tv)
         {
-            _tvReceiver = tvReceiver;
+            _tVReceiver = tv;
         }
 
         public bool IsExecutionPossible()
         {
-            return _tvReceiver.IsTurnedOn();
+            return _tVReceiver.IsTurnedOn();
         }
 
         public void Execute()
         {
-            _tvReceiver.TurnOn();
+            _tVReceiver.IncreaseVolume();
         }
 
         public void Undo()
         {
-            _tvReceiver.TurnOff();
+            _tVReceiver.DecreaseVolume();
         }
     }
 }
