@@ -87,6 +87,7 @@
     <Compile Include="Command\Example\TV\TvOnCommand.cs" />
     <Compile Include="Command\Example\TV\TVReceiver.cs" />
     <Compile Include="Command\Example\TV\VolumeCommand.cs" />
+    <Compile Include="Command\OwnExample\Commands\ICommand.cs" />
     <Compile Include="Composite\Example\Component.cs" />
     <Compile Include="Composite\Example\Directory.cs" />
     <Compile Include="Composite\Example\File.cs" />
@@ -200,7 +201,10 @@
     <Folder Include="Bridge\ExampleProblem\" />
     <Folder Include="Bridge\OwnExample\" />
     <Folder Include="Bridge\OwnProblem\" />
-    <Folder Include="Command\OwnExample\" />
+    <Folder Include="Command\OwnExample\Commands\ConcreteCommands\" />
+    <Folder Include="Command\OwnExample\Commands\MacroCommands\" />
+    <Folder Include="Command\OwnExample\Invokers\" />
+    <Folder Include="Command\OwnExample\Receivers\" />
     <Folder Include="Command\OwnProblem\" />
     <Folder Include="Composite\ExampleProblem\" />
     <Folder Include="Composite\OwnProblem\" />
