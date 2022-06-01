@@ -32,6 +32,7 @@ namespace GoF_Patterns.Utils
                 case PatternType.Adapter: presenter = new AdapterPresenter(); break;
                 case PatternType.Bridge: presenter = new BridgePresenter(); break;
                 case PatternType.Flyweight: presenter = new FlyweightPresenter(); break;
+                case PatternType.Command: presenter = new CommandPresenter(); break;
             }
 
             return presenter;

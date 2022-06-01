@@ -12,6 +12,7 @@
         Proxy = 8,
         Adapter = 9,
         Bridge = 10,
-        Flyweight = 11
+        Flyweight = 11,
+        Command = 12
     }
 }
